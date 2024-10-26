@@ -431,10 +431,31 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 100%; /* Разрешить использование всей доступной ширины */
+  max-width: 100%;
   width: 100%;
-  overflow-x: auto; /* Добавить прокрутку, если текст выходит за пределы */
+  overflow-x: auto;
 }
+
+/* Стили для горизонтального скроллбара */
+.contacts-list::-webkit-scrollbar {
+  height: 8px; /* Уменьшаем высоту скроллбара */
+}
+
+.contacts-list::-webkit-scrollbar-track {
+  background: transparent; /* Прозрачный трек, чтобы не выделялся */
+}
+
+.contacts-list::-webkit-scrollbar-thumb {
+  background-color: #333; /* Черный цвет для ползунка */
+  border-radius: 4px; /* Скругление краёв */
+}
+
+/* Стиль для Firefox */
+.contacts-list {
+  scrollbar-width: thin; /* Тонкая полоса прокрутки */
+  scrollbar-color: #333 transparent; /* Черный ползунок на прозрачном фоне */
+}
+
 
 .contact-item {
   display: flex;
