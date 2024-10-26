@@ -428,18 +428,22 @@ main {
 }
 
 .contacts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 650px;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
+  max-width: 100%; /* Разрешить использование всей доступной ширины */
+  width: 100%;
+  overflow-x: auto; /* Добавить прокрутку, если текст выходит за пределы */
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  min-width: 400px;
-  white-space: nowrap;
+  min-width: 300px; /* Минимальная ширина для компактных экранов */
+  white-space: nowrap; /* Не переносить текст */
+  overflow: hidden; /* Обрезка текста, выходящего за границы */
+  text-overflow: ellipsis; /* Троеточие для обрезанного текста */
 }
 
 .contact-info {
