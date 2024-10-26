@@ -430,16 +430,15 @@ main {
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 600px;
+  max-width: 650px;
   gap: 16px;
 }
 
 .contact-item {
-  min-width: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
-  min-width: 350px;
+  min-width: 400px;
   white-space: nowrap;
 }
 
