@@ -1,12 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naumenko Andrei Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <button class="info_lang-btn" id ="langButton">
+      <span lang="en">En</span>
+      <span lang="ru">Ru</span>
+    </button>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.jpg" alt="Aleksandr Panchenko" width="80" style="border-radius: 30px;">
+        </figure>
+
+        <div class="info-content">
+          <h1 lang="en" class="name" title="Aleksandr Panchenko">Naumenlo Andrei</h1>
+          <h1 lang="ru" class="name" title="Aleksandr Panchenko">Науменко Андей</h1>
+
+          <p lang="en" class="title">Unity developer</p>
+          <p lang="ru" class="title">Unity разработчик</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span lang="en">Contacts</span>
+          <span lang="ru">Контакты</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+
+        
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/NAndronN" class="social-link">
+              <img src="./assets/images/socialNetworks/icon-github.svg" width="25px"></img>
+            </a>
+          </li>
+            <!--
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/USER_NAME/" class="social-link">
+              <img src="./assets/images/socialNetworks/icon-linkedin.svg" width="25px"></img>
+            </a>
+          </li>
+            -->
+            
+          <li class="social-item">
+            <a href="https://t.me/n_andron" class="social-link">
+              <img src="./assets/images/socialNetworks/icon-telegram.svg" width="25px"></img>
+            </a>
+          </li>
+        </ul>
+
+
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:andron.nwork@gmail.com" class="contact-link">andron.nwork@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p lang="en" class="contact-title">Location</p>
+              <p lang="ru" class="contact-title">Локация</p>
+
+              <address lang="en">Ulyanovsk, Russia</address>
+              <address lang="ru">Ульяновск, Россия</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header lang="en">
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <header lang="ru">
+          <h2 class="h2 article-title">О себе</h2>
+        </header>
+
+        <section class="about-text">
+          <p lang="en">
+            I'm Unity Developer working in mobile and desktop games development.
+          </p>
+          <p lang="ru">
+            Я Unity разработчик, в данный момент работаю над мобильными и декстопными играми.
+          </p>
+          <p lang="en">
+            I enjoy creating exciting gaming experiences.
+          </p>
+          <p lang="ru">
+            Мне нравится создавать интересный игровой опыт.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+         <!--<section class="service">
+
+          <h3 lang="en" class="h3 service-title">What i'm doing</h3>
+          <h3 lang="ru" class="h3 service-title">Что я делаю</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/skills/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 lang="en" class="h4 service-item-title">Web games</h4>
+                <h4 lang="ru" class="h4 service-item-title">Веб игры</h4>
+
+                <p lang="en" class="service-item-text">
+                  Development of HTML 5 games.
+                </p>
+
+                <p lang="ru" class="service-item-text">
+                  Разработка HTML 5 игр.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/skills/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 lang="en" class="h4 service-item-title">Mobile games</h4>
+                <h4 lang="ru" class="h4 service-item-title">Мобильные игры</h4>
+
+                <p lang="en" class="service-item-text">
+                  Development of mobile games for Android.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка мобильных игр для платформы Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/skills/icon-ar.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 lang="en" class="h4 service-item-title">AR games</h4>
+                <h4 lang="ru" class="h4 service-item-title">AR игры</h4>
+
+                <p lang="en" class="service-item-text">
+                  Development of AR applications for Android.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка AR приложений для платформы Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/skills/icon-simulator.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 lang="en" class="h4 service-item-title">Simulators</h4>
+                <h4 lang="ru" class="h4 service-item-title">Симуляторы</h4>
+
+                <p lang="en" class="service-item-text">
+                  Development of training simulators for educational purposes.
+                </p>
+                <p lang="ru" class="service-item-text">
+                  Разработка игровых симуляторов для образовательных целей.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      -->
+
+        <header lang="en">
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <header lang="ru">
+          <h2 class="h2 article-title">Инструменты</h2>
+        </header>
+
+        <section class="about-text">
+          <div class="tech-stack" >
+            <img src="assets/images/stack/csharp.svg" alt="c#" class="tech-icon">
+            <img src="assets/images/stack/unity.svg" alt="unity" class="tech-icon">
+            <img src="assets/images/stack/git.svg" alt="git" class="tech-icon">
+            <!--<img src="assets/images/stack/sql.svg" alt="sql" class="tech-icon">-->
+            <img src="assets/images/stack/rider.svg" alt="rider" class="tech-icon">
+            <img src="assets/images/stack/chatgpt.svg" alt="chatgpt" class="tech-icon">
+          </div>
+        </section>
+
+        <!--
+        <header>
+          <h2 lang="en" class="h2 article-title">Portfolio</h2>
+          <h2 lang="ru" class="h2 article-title">Портфолио</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://yandex.ru/games/app/361923?draft=true&lang=ru">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-coolKingdom.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Cool Kingdom</h3>
+                <h3 lang="ru" class="project-title">Кайфовое королевство</h3>
+
+                <p lang="en" class="project-category">RPG - HTML</p>
+                <p lang="ru" class="project-category">RPG - HTML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://yandex.ru/games/app/345615?utm_source=app_page">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-grandHotel.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Grand Hotel "Cat's House"</h3>
+                <h3 lang="ru" class="project-title">Гранд Отель "Кошкин Дом"</h3>
+
+                <p lang="en" class="project-category">Casual - HTML</p>
+                <p lang="ru" class="project-category">Казуальные - HTML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://allpanc.github.io/Locomotive-Assembly-Simulator-Preview/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-festu-2.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Locomotive assembly simulator</h3>
+                <h3 lang="ru" class="project-title">Симулятор сборки локомотива</h3>
+
+                <p lang="en" class="project-category">Simulator</p>
+                <p lang="ru" class="project-category">Симулятор</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.crazygames.com/game/fruit-balls-juicy-fusion">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-juicyFruit.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Fruit Balls: Juicy Merge</h3>
+                <h3 lang="ru" class="project-title">Фруктовые шарики: Сочное слияние</h3>
+
+                <p lang="en" class="project-category">Casual - HTML</p>
+                <p lang="ru" class="project-category">Казуальные - HTML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://yandex.ru/games/app/294351?utm_source=app_page">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-russesVsLizards.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Russes vs Lizards: Eggfall</h3>
+                <h3 lang="ru" class="project-title">Русы против Ящеров: Яйцепад</h3>
+
+                <p lang="en" class="project-category">Arcade - HTML</p>
+                <p lang="ru" class="project-category">Аркады - HTML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://yandex.ru/games/app/294818?utm_source=app_page">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-tileFusion.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Tile Fusion</h3>
+                <h3 lang="ru" class="project-title">Тающие Тайлы</h3>
+
+                <p lang="en" class="project-category">Match 3 Mahjong - HTML</p>
+                <p lang="ru" class="project-category">Маджонг 3 в ряд - HTML</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://apps.rustore.ru/app/com.DefaultCompany.GimaQuest">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-gimaQuest.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GimaQuest</h3>
+
+                <p lang="en" class="project-category">AR Quest - Android</p>
+                <p lang="ru" class="project-category">AR Квест - Android</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://umczdt.ru/news/onlayn-otkrytie-ii-molodezhnogo-mezhdunarodnogo-internet-lagerya-intertranscamp/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/icon-festu-3.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 lang="en" class="project-title">Railway Port Simulator</h3>
+                <h3 lang="ru" class="project-title">Симулятор железнодорожного порта</h3>
+
+                <p lang="en" class="project-category">Simulator</p>
+                <p lang="ru" class="project-category">Симулятор</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+          -->
+
+        <header>
+          <h2 lang="en" class="h2 article-title">Resume</h2>
+          <h2 lang="ru" class="h2 article-title">Резюме</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 lang="en" class="h3">Experience</h3>
+            <h3 lang="ru" class="h3">Опыт</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+              
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">VIR Group - Unity Developer</h4>
+
+              <span lang="en">August 2024 — Present</span>
+              <span lang="ru">Август 2024 — Текущее время</span>
+
+              <p lang="en" class="timeline-text">
+                - Game logic development.
+              </p>
+              <p lang="en" class="timeline-text">
+                - UI logic development.
+              </p>
+              <p lang="en" class="timeline-text">
+                - Code optimization and refactoring.
+              </p>
+              <p lang="en" class="timeline-text">
+                - Writing Unit Tests.
+              </p>
+                
+
+              <p lang="ru" class="timeline-text">
+                - Разработка игровой логики.
+              </p>
+              <p lang="ru" class="timeline-text">
+                - Разработка логики интерфейсов.
+              </p>
+              <p lang="ru" class="timeline-text">
+                - Оптимизация и рефакторинг кода.
+              </p>
+              <p lang="ru" class="timeline-text">
+                - Написание Unit-тестов.
+              </p>
+            </li>
+
+              
+          </ol>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 lang="en" class="h3">Education</h3>
+              <h3 lang="ru" class="h3">Образование</h3>
+            </div>
+  
+            <ol class="timeline-list">
+    
+              <li class="timeline-item">
+  
+                <h4 lang="en" class="h4 timeline-item-title">Ulyanovsk State Technical University</h4>
+                <h4 lang="ru" class="h4 timeline-item-title">Ульяновский государственный технический университет</h4>
+  
+                <span lang="en">2021 —  Present</span>
+                <span lang="ru">2021 — Текущее время</span>
+  
+                <p lang="en" class="timeline-text">
+                  Bachelor's Degree in Computer Science.
+                </p>
+                <p lang="ru" class="timeline-text">
+                  Бакалавриат по специальности "Информатика и вычислительная техника".
+                </p>
+  
+              </li>
+            </ol>
+          </section>
+        </section>
+
+        
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
