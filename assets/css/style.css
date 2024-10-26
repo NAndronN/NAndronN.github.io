@@ -430,6 +430,7 @@ main {
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 600px;
   gap: 16px;
 }
 
@@ -438,6 +439,8 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 300px;
+  white-space: nowrap;
 }
 
 .contact-info {
